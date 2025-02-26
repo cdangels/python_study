@@ -1,7 +1,10 @@
 import os
 import platform
 
-'''Usamos snake_case para nombrar variables y funciones. Ejemplo: nombre_completo, suma_numeros, etc.'''
+'''Usamos snake_case para nombrar variables y funciones. 
+Ejemplo: nombre_completo, suma_numeros, etc.'''
+
+
 
 #Para crear notas en una linea usamos #
 #Para crear comentarios en varias lineas usamos """
@@ -11,18 +14,20 @@ este es un comentario
 de varias lineas
 """
 
-''' La funcion type(dato) nos permite saber el tipo de dato que estamos usando.'''
-# Ejemplo:
-# print(type(5)) # <class 'int'>
-# print(type(5.5)) # <class 'float'>
-# print(type("Hola")) # <class 'str'>
-# print(type(True)) # <class 'bool'>
-# print(type([1, 2, 3])) # <class 'list'>
-# print(type((1, 2, 3))) # <class 'tuple'>
-# print(type({1, 2, 3})) # <class 'set'>
-# print(type({"nombre": "David", "edad": 34})) # <class 'dict'>
-# print(type(None)) # <class 'NoneType'>
+#type()
+''' La funcion type(dato) nos permite saber el tipo de dato que estamos usando.
+Ejemplo:
+print(type(5)) # <class 'int'>
+print(type(5.5)) # <class 'float'>
+print(type("Hola")) # <class 'str'>
+print(type(True)) # <class 'bool'>
+print(type([1, 2, 3])) # <class 'list'>
+print(type((1, 2, 3))) # <class 'tuple'>
+print(type({1, 2, 3})) # <class 'set'>
+print(type({"nombre": "David", "edad": 34})) # <class 'dict'>
+print(type(None)) # <class 'NoneType'>'''
 
+#Comillas
 '''Los string se pueden escribir dentro de comillas simples, dobles o triple.'''
 # Ejemplo:
 primer_nombre= 'Cristian'
@@ -31,7 +36,9 @@ print(primer_nombre)
 print(segundo_nombre:= "David")
 # := es el operador de asignación de expresiones de Python 3.8
 
-Apellido= '''Angel'''
+#Las comillas triples se usan para strings multilínea.
+Apellido= '''Angel
+Sandoval'''
 print(Apellido)
 
 '''En una llamada a print, el carácter = solo se utiliza para argumentos con nombre (como sep, end, o file), pero no para asignar un valor a una variable.'''
@@ -83,3 +90,7 @@ print(dir(lista))
 #Getters
 """Un Getter es un método que obtiene el valor de un atributo privado. En Python, los getters se utilizan para acceder a los atributos privados de una clase de forma segura. Los getters son útiles para proteger los datos de la clase y garantizar que no se modifiquen directamente desde fuera de la clase."""
 
+#Del
+"""El operador del se usa para eliminar elementos de una lista o diccionario. También se puede usar para eliminar variables o atributos de un objeto."""
+#del Apellido 
+print(Apellido)

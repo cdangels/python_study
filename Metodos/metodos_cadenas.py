@@ -73,8 +73,9 @@ print("En la cadena ", cadena1, "se reemplaza 'Cristian' por 'David': ", cadena1
 
 print()
 #Metodos de separación, .split()
+#.split() separa la cadena por el espacio y devuelve una lista con las palabras o los valores de la variable separadas. Si .split() no recibe argumentos, separa la cadena por el espacio.
 print("Metodos de separación:")
 print(".split()")
-print("La cadena", cadena1, "se separa por el espacio: ", cadena1.split()) #.split() separa la cadena por el espacio y devuelve una lista con las palabras o los valores de la variable separadas. Si .split() no recibe argumentos, separa la cadena por el espacio.
+print("La cadena", cadena1, "se separa por el espacio: ", cadena1.split()) 
 cadena1v2 = cadena1.split(" ")
 print("La primera palabra de la lista es:", cadena1v2[0]) #Imprime la primera palabra de la lista

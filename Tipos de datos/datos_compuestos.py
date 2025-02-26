@@ -45,3 +45,15 @@ Diccionario = {
     } 
 print("Nombre: ", Diccionario["nombre"])
 print("Ciudad:", Diccionario["ciudad"])
+
+#La lista va dentro de los corchetes.
+#Ejem: lista = [1, 2, 3, 4, 5]
+
+#La tupla dentro de los parentesis.
+#Ejem: tupla = (1, 2, 3, 4, 5)
+
+#El conjunto dentro de las llave.
+#Ejem: conjunto = {1, 2, 3, 4, 5}
+
+#El diccionario dentro de las llaves con los dos puntos.
+#Ejem: diccionario = {'nombre': "David", 'edad': 34, "ciudad": "Bogotá"}
