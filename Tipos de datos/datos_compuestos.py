@@ -1,4 +1,19 @@
-"""Primer dato compuesto: Listas"""
+#Lista: se crea con corchetes. []
+    #Ejem: lista = [1, 2, 3, 4, 5]
+#Tupla: se crea con parentesis. ()
+    #Ejem: tupla = (1, 2, 3, 4, 5)
+#Diccionario: dict{} se crea con llaves. {}
+    #Se compone de claves y valores. {'clave': 'valor'}
+    #Ejemplo: diccionario = {'nombre': "David", 'edad': 34, "ciudad": "Bogotá"}
+#Conjunto: set{} se crea con llaves. {}
+    #Ejemplo: conjunto = {"a", "b", "c", True, 4, 5.5}
+    #No puede tener elementos repetidos.
+    #No tiene orden.
+    #No puede tener elementos mutables.
+    #No puede tener elementos no hasheables.
+
+
+"""Listas list()"""
 
 lista = ["a", "b", "c", True, 4, 5.5] # Las listas se definen con corchetes
 print("01.", lista) # 01. ['a', 'b', 'c', True, 4, 5.5]
@@ -16,7 +31,7 @@ print("03.", lista[5]) # 03. 5.5
 lista[0] = "z" # Cambiamos el valor de la primera posición de la lista
 print("Valor 0 actualizado de lista", lista[0])
 
-"""Segundo dato compuesto: Tuplas"""
+"""Tuplas (tuple)"""
 tupla = ("a", "b", "c", True, 4, 5.5) # Las tuplas se definen con parentesis
 print("Tupla 0.", tupla[0]) 
 
@@ -25,7 +40,7 @@ print("Tupla 0.", tupla[0])
 # Las tuplas son inmutables, no podemos cambiar sus valores y se definen con parentesis
 # Las dos se llaman con corchete
 
-"""#Tercer tipo de dato compuesto:  Set (conjunto)."""
+"""Conjunto set()"""
 
 #Para definir un conjunto usamos llaves.
 #Se pueden redefinir en general pero no podemos cambiar uno a uno sus elementos.
@@ -33,7 +48,7 @@ print("Tupla 0.", tupla[0])
 #Sus datos son desordenados.
 conjunto = {"a", "b", "c", True, 4, 5.5}
 
-"""#Cuarto tipo de dato compuesto: Diccionarios"""
+"""Diccionarios dict()"""
 #Se definen con llaves y tienen una estructura 'clave': valor
 #La clave se puede poner entre comillas simples o dobles.
 #Se separan los elementos con comas y se accede a ellos con la clave entre corchetes.
@@ -45,15 +60,3 @@ Diccionario = {
     } 
 print("Nombre: ", Diccionario["nombre"])
 print("Ciudad:", Diccionario["ciudad"])
-
-#La lista va dentro de los corchetes.
-#Ejem: lista = [1, 2, 3, 4, 5]
-
-#La tupla dentro de los parentesis.
-#Ejem: tupla = (1, 2, 3, 4, 5)
-
-#El conjunto dentro de las llave.
-#Ejem: conjunto = {1, 2, 3, 4, 5}
-
-#El diccionario dentro de las llaves con los dos puntos.
-#Ejem: diccionario = {'nombre': "David", 'edad': 34, "ciudad": "Bogotá"}

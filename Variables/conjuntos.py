@@ -49,7 +49,7 @@ superset2 = conj2 >= conj1 #True
 
 #ISDISJOINT
 print("ISDISJOINT")
-'''Para determinar si dos conjuntos son disjuntos se usa el método isdisjoint(). Un conjunto es disjunto de otro si no tienen elementos en común. ''' 
+'''Para determinar si dos conjuntos son disjuntos se usa el método isdisjoint(). Un conjunto es disjunto de otro si no tienen elementos en común. Si solo un elemento está en ambos conjuntos, no son disjuntos. ''' 
 disjoint1 = conj1.isdisjoint(conj2) #False
 print(f"El conjunto 1,2,3 y 1,2,3,4,5 son disjuntos {disjoint1}")
 #Es falso porque 1,2,3 si está en 1,2,3,4,5
@@ -60,8 +60,8 @@ print(f"El conjunto 1,2,3 y 8,9,10 son disjuntos {disjoint2}")
 #SUBSET Manual
 print("SUBSET Manual usando una función.")
 def issubset_manual(conj1, conj2):
-    for elem in conj1:  # Recorre cada elemento de A
-        if elem not in conj2:  # Verifica si está en B
-            return False  # Si uno no está, A NO es subconjunto de B
-    return True  # Si todos están, A es subconjunto de B
+    for elem in conj1:  # Recorre cada elemento de conj1
+        if elem not in conj2:  # Verifica si está en conj2
+            return False  # Si uno no está, conj1 NO es subconjunto de conj2
+    return True  # Si todos los valores de conj1 están en conj2 es un subconjunto de conj2
 print(f"El conjunto 1,2,3 hacer parte del conjunto 1,2,3,4,5: {issubset_manual(conj1, conj2)}")  # True
