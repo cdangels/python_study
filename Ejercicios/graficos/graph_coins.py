@@ -4,6 +4,8 @@ import seaborn as sns
 
 df = pd.read_csv("Ejercicios\\graficos\\prices_coins.csv")
 
+#Imprimir el nombre de las columnas del DataFrame
+#print(df.columns)
 
 sns.boxplot(x="Moneda", y="Precio", data=df)
 
