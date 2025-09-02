@@ -1,0 +1,10 @@
+/* ===== CSS ===== */
+/* ! Revisar compatibilidad con IE */
+/* ? ¿Es necesario el vendor prefix? */
+/* TODO: Optimizar para mobile */
+/* * Clase principal del componente */
+
+.mi-clase {
+    color: blue; /* NOTE: Color del tema principal */
+}
+

@@ -20,11 +20,10 @@ for animal in animales:
     
 #Ejemplo2
 print()
-print("Lista de numeros")
 numeros = [1,2,3,4,5]
-print(numeros)
+print(f"Lista de numeros {numeros}")
 for resultado in numeros:
-    print(f"El doble de cada numero es: {resultado*2}")
+    print(f"El doble de {resultado} es: {resultado*2}")
     
 '''Existen dos maneras de anidar ciclos for en python, la primera es utilizando dos ciclos for, la segunda es utilizando un ciclo for y un zip().'''
 

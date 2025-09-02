@@ -1,0 +1,8 @@
+Para cambiar el color de los titulos se debe:
+
+Abrir configuración:
+
+Ctrl + , (Cmd + , en Mac)
+File > Preferences > Settings
+
+Abrir better-comments.tags

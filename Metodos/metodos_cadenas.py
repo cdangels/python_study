@@ -79,3 +79,4 @@ print(".split()")
 print("La cadena", cadena1, "se separa por el espacio: ", cadena1.split()) 
 cadena1v2 = cadena1.split(" ")
 print("La primera palabra de la lista es:", cadena1v2[0]) #Imprime la primera palabra de la lista
+

@@ -1,5 +1,6 @@
 import os
-import platform
+import sys
+from pathlib import Path
 
 '''Usamos snake_case para nombrar variables y funciones. 
 Ejemplo: nombre_completo, suma_numeros, etc.'''
@@ -99,10 +100,45 @@ print(dir(lista))
 """Si intentamos en una tupla invertirla, ordenarla o alterar sus elementos de cualquier forma, nos devolverá un error, ya que las tuplas tanto como los conjuntos son inmutables."""
 
 '''Getters'''
-    # Un Getter es un método que obtiene el valor de un atributo privado. En Python, los getters se utilizan para acceder a los atributos privados de una clase de forma segura. Los getters son útiles para proteger los datos de la clase y garantizar que no se modifiquen directamente desde fuera de la claseю
+    # Un Getter es un método que obtiene el valor de un atributo privado. En Python, los getters se utilizan para acceder a los atributos privados de una clase de forma segura. Los getters son útiles para proteger los datos de la clase y garantizar que no se modifiquen directamente desde fuera de la clase
 
 '''Del'''
     # El operador del se usa para eliminar elementos de una lista o diccionario. También se puede usar para eliminar variables o atributos de un objeto."""
 
 
+'''Acceder a un módulo en otra carpeta diferente a la actual.'''
+# Ruta absoluta al directorio 'Modulos'
+base_dir = Path(__file__).resolve().parent.parent
+modulos_path = base_dir / "Modulos"
 
+'''Este fragmento usa pathlib, una biblioteca para trabajar con rutas. La variable __file__ representa la ruta del archivo actual (en este caso notas.py). El método resolve() convierte esa ruta en una ruta absoluta, útil para evitar ambigüedades si se ejecuta desde distintos lugares. Luego, parent se usa dos veces para subir dos niveles en el árbol de directorios, es decir, desde el archivo actual hasta el directorio raíz que contiene tanto Varios/ como Modulos/; ese directorio se guarda en base_dir. Después, con base_dir / "Modulos" se construye una nueva ruta que apunta directamente a la carpeta Modulos, utilizando el operador / que pathlib redefine de manera elegante para concatenar rutas. Así, modulos_path contiene la ruta absoluta a la carpeta Modulos, lo cual permite luego agregarla a sys.path y hacer importaciones desde ahí.'''
+
+# Agregar la ruta al sys.path
+sys.path.append(str(modulos_path))
+
+# Importar el módulo
+from LlamarModulo import Llamada1 # type: ignore
+# type: ignore ignora el error.
+
+# Usar la función
+print(Llamada1.signo("Piscis"))
+
+'''Mostrar el nombre del módulo'''
+print(__name__)
+
+#En Python, __name__ es una variable especial que existe en todos los archivos .py. Su valor depende de cómo se ejecuta el archivo:
+
+# Si ejecutas el archivo directamente (por ejemplo, python archivo.py), entonces __name__ vale '__main__'.
+# Si el archivo es importado desde otro archivo, entonces __name__ toma el nombre del archivo (sin .py).
+
+'''Formas de convertir una cadena de texto en una lista y enumerarla'''
+
+#Imprimir sys.path como lista, una línea por elemento:
+
+for ruta in sys.path:
+    print(ruta)
+    
+#También puedes usar enumerate si quieres numerarlos:
+
+for i, ruta in enumerate(sys.path): #Enumerate te permite numerar los elementos de una lista.
+    print(f"{i}: {ruta}")

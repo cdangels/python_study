@@ -1,0 +1,17 @@
+Los datos son:
+
+Nombre: Cristian
+Apellido: Gomez
+--------
+Nombre: David
+Apellido: Lopez
+--------
+Nombre: Oscar
+Apellido: Perez
+--------
+Nombre: Juan
+Apellido: Martinez
+--------
+Nombre: Pedro
+Apellido: Garcia
+--------

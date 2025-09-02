@@ -1,6 +1,6 @@
 frase = input("Escribeme una frase y te calculo cuanto tardarías en leerla: ")
-palabras_separadas = frase.split(" ")
-cantidad_de_palabras = len(palabras_separadas)
+palabras_separadas = frase.split(" ") #split() separa una cadena de texto en una lista de palabras, utilizando el espacio como separador. Se puede usar cualquier otro separador, como una coma o un punto y coma.
+cantidad_de_palabras = len(palabras_separadas) #len() devuelve la cantidad de elementos de una lista, en este caso, la cantidad de palabras en la frase.
 print(f"La frase tiene {cantidad_de_palabras} palabras. Si en promedio decimos 2 palabras por segundo entonces tardarías {cantidad_de_palabras/2} segundos en leerla.")
 print(f"Una persona que hable 30% más rapido diría {cantidad_de_palabras} palabras en {round((cantidad_de_palabras/2)-(cantidad_de_palabras*0.3),1)} segundos.")
 

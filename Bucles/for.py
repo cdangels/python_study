@@ -1,5 +1,6 @@
 #Continue
 '''Dentro del bucle for se puede usar el comando continue para saltar a la siguiente iteración sin ejecutar el código que sigue a la palabra clave continue.'''
+'''El For recorre elementos de una lista, tupla, cadena de texto, etc. Mientras es while es un bucle "infinito" que se ejecuta mientras una condición sea verdadera.'''
 
 frutas = ['manzana', 'pera', 'mango', 'fresa', 'piña']
 for fruta in frutas:
